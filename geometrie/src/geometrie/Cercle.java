@@ -92,6 +92,4 @@ public class Cercle {
 		System.out.println("Cercle de rayon :" + r );
 		System.out.println("Surface :" + surface());
 	}
-	
-	
 }

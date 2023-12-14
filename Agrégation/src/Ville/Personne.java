@@ -11,7 +11,7 @@ public class Personne {
 		super();
 		this.setNom(nom);
 		this.setPrenom(prenom);
-		this.setAdresse(adresse.getRue(), adresse.getVille(), adresse.getCodepostal());
+		this.setAdresse(adresse);
 	}
 		
 		
@@ -30,8 +30,8 @@ public class Personne {
 	public  Adresse getAdresse() {
 		return adresse;
 	}
-	public void setAdresse(String rue, String ville, int codepostal) {
-		new Adresse(rue,ville,codepostal);
+	public void setAdresse(Adresse adresse) {
+		this.adresse=adresse;
 	}
 
 
@@ -41,5 +41,5 @@ public class Personne {
 	}
 	
 
-
+ 
 }
