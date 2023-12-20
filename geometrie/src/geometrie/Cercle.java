@@ -1,6 +1,6 @@
 package geometrie;
 
-public class Cercle {
+public class Cercle extends Figure{
 	
 	public class Centre {
 		
@@ -59,7 +59,7 @@ public class Cercle {
 		return aire;
 	}
 	
-
+	
 	public double getR() {
 		return r;
 	}
@@ -91,5 +91,23 @@ public class Cercle {
 	{
 		System.out.println("Cercle de rayon :" + r );
 		System.out.println("Surface :" + surface());
+	}
+
+
+	public double aire() {
+		double aire = Math.pow(this.getR(),2)* Math.PI;
+		return aire;
+	}
+
+
+	public double perimetre() {
+		double perimetre = 2 * Math.PI *this.getR();
+		return perimetre;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Cercle [r=" + r + ", c=" + c + ", aire()=" + aire() + ", perimetre()=" + perimetre() + "]";
 	}
 }
